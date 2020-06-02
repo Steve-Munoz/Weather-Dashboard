@@ -11,16 +11,16 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Weather Dashboard</title>
   </head>
   <body>
-    <div id="topTitle">
+    <div class="container-sm-md-lg" id="topTitle">
       <h1>Weather Dashboard</h1>
     </div>
     <div class="container wholeWebpage">
       <div class="row columnsPage">
-        <div class=leftColumn">
+        <div class="col-4 col-sm-3 leftColumn">
           <article id="searchColumn">
             <p class="searchTitle">Search for a City:</p>
             <div class="searchInput">
@@ -53,37 +53,37 @@
             <form id="history"></form>
           </article>
         </div>
-        <div  id="rightWholeColumn">
-          <div>
-            <div id="rightTopRow">
+        <div class="col-8" id="rightWholeColumn">
+          <div class="row mr-0">
+            <div class="col-12 border border-dark m-3 rounded col forecast bg-primary text-white ml-3 mb-3 rounded" id="rightTopRow">
               <div class="row" id="cityDetails">
-                <div class="col">
-                  <span id="city-name"></span>
+                <div class="col-12">
+                  <span id="city-name" class="city-name align-middle"></span>
                   <img id="current-pic" src="placeholder" alt="">
               </div>
           </div>
           <div class="row">
-              <div class="col">
+              <div class="col-12">
                   <p id="city-temperature"></p>
               </div>
           </div>
           <div class="row">
-            <div class="col">
+            <div class="col-12">
                 <p id="temp-icon"></p>
             </div>
         </div>
           <div class="row">
-              <div class="col">
+              <div class="col-12">
                   <p id="humidity"></p>
               </div>
           </div>
           <div class="row">
-              <div class="col">
+              <div class="col-12">
                   <p id="wind-speed"></p>
               </div>
           </div>
           <div class="row">
-              <div class="col">
+              <div class="col-12 d-flex">
                   <div id="UV-index"></div>
               </div>
           </div>
@@ -92,38 +92,38 @@
             </div>
           </div>
           <div class="row" id="rightBottomRow">
-            <div class="col" id="rightBottomRowTitle">
+            <div class="col-12" id="rightBottomRowTitle">
               <h3>5-Day forecast:</h3>
             </div>
             <!-- break so that the next 5 divs are under 5 Day Forecast Title -->
-            <div></div>
+            <div class="w-100"></div>
             <div class="col">
               <div
-                class="col"
+                class="col forecast bg-primary text-white ml-3 mb-3 rounded"
                 id="firstDayForecastCard"
               ></div>
             </div>
             <div class="col">
               <div
-                class="col "
+                class="col forecast bg-primary text-white ml-3 mb-3 rounded"
                 id="secondDayForecastCard"
               ></div>
             </div>
             <div class="col">
               <div
-                class="col"
+                class="col forecast bg-primary text-white ml-3 mb-3 rounded"
                 id="thirdDayForecastCard"
               ></div>
             </div>
             <div class="col">
               <div
-                class="col"
+                class="col forecast bg-primary text-white ml-3 mb-3 rounded"
                 id="fourthDayForecastCard"
               ></div>
             </div>
             <div class="col">
               <div
-                class="col "
+                class="col forecast bg-primary text-white ml-3 mb-3 rounded"
                 id="fifthDayForecastCard"
               ></div>
             </div>
