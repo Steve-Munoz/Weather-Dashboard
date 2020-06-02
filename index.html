@@ -15,12 +15,12 @@
     <title>Weather Dashboard</title>
   </head>
   <body>
-    <div class="container-sm-md-lg" id="topTitle">
+    <div id="topTitle">
       <h1>Weather Dashboard</h1>
     </div>
     <div class="container wholeWebpage">
       <div class="row columnsPage">
-        <div class="col-4 col-sm-3 leftColumn">
+        <div class=leftColumn">
           <article id="searchColumn">
             <p class="searchTitle">Search for a City:</p>
             <div class="searchInput">
@@ -53,37 +53,37 @@
             <form id="history"></form>
           </article>
         </div>
-        <div class="col-8" id="rightWholeColumn">
-          <div class="row mr-0">
-            <div class="col-12 border border-dark m-3 rounded col forecast bg-primary text-white ml-3 mb-3 rounded" id="rightTopRow">
+        <div  id="rightWholeColumn">
+          <div>
+            <div id="rightTopRow">
               <div class="row" id="cityDetails">
-                <div class="col-12">
-                  <span id="city-name" class="city-name align-middle"></span>
+                <div class="col">
+                  <span id="city-name"></span>
                   <img id="current-pic" src="placeholder" alt="">
               </div>
           </div>
           <div class="row">
-              <div class="col-12">
+              <div class="col">
                   <p id="city-temperature"></p>
               </div>
           </div>
           <div class="row">
-            <div class="col-12">
+            <div class="col">
                 <p id="temp-icon"></p>
             </div>
         </div>
           <div class="row">
-              <div class="col-12">
+              <div class="col">
                   <p id="humidity"></p>
               </div>
           </div>
           <div class="row">
-              <div class="col-12">
+              <div class="col">
                   <p id="wind-speed"></p>
               </div>
           </div>
           <div class="row">
-              <div class="col-12 d-flex">
+              <div class="col">
                   <div id="UV-index"></div>
               </div>
           </div>
@@ -92,38 +92,38 @@
             </div>
           </div>
           <div class="row" id="rightBottomRow">
-            <div class="col-12" id="rightBottomRowTitle">
+            <div class="col" id="rightBottomRowTitle">
               <h3>5-Day forecast:</h3>
             </div>
             <!-- break so that the next 5 divs are under 5 Day Forecast Title -->
-            <div class="w-100"></div>
+            <div></div>
             <div class="col">
               <div
-                class="col forecast bg-primary text-white ml-3 mb-3 rounded"
+                class="col"
                 id="firstDayForecastCard"
               ></div>
             </div>
             <div class="col">
               <div
-                class="col forecast bg-primary text-white ml-3 mb-3 rounded"
+                class="col "
                 id="secondDayForecastCard"
               ></div>
             </div>
             <div class="col">
               <div
-                class="col forecast bg-primary text-white ml-3 mb-3 rounded"
+                class="col"
                 id="thirdDayForecastCard"
               ></div>
             </div>
             <div class="col">
               <div
-                class="col forecast bg-primary text-white ml-3 mb-3 rounded"
+                class="col"
                 id="fourthDayForecastCard"
               ></div>
             </div>
             <div class="col">
               <div
-                class="col forecast bg-primary text-white ml-3 mb-3 rounded"
+                class="col "
                 id="fifthDayForecastCard"
               ></div>
             </div>
