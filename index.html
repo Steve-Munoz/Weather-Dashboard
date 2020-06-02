@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+    <title>Weather Dashboard</title>
+  </head>
+  <body>
+    <div class="container-sm-md-lg" id="topTitle">
+      <h1>Weather Dashboard</h1>
+    </div>
+    <div class="container wholeWebpage">
+      <div class="row columnsPage">
+        <div class="col-4 col-sm-3 leftColumn">
+          <article id="searchColumn">
+            <p class="searchTitle">Search for a City:</p>
+            <div class="searchInput">
+              <div class="recentlySearchedGroup">
+                <input type="text" placeholder=" City" id="cityInput" />
+                <button
+                  type="button"
+                  class="btn-primary btn-info"
+                  id="searchBtn"
+                >
+                  Search
+                  <!-- <span class="glyphicon glyphicon-search">
+                    <i class="far fa-search"> Search</i>
+                  </span> -->
+                </button>
+                <div id = "lastSearchedCity">
+                  Test City
+                </div>
+
+              </div>
+              <br />
+            </div>
+            <button
+              class="btn btn-primary mb-3"
+              type="button"
+              id="clear-history"
+            >
+              Clear history
+            </button>
+            <form id="history"></form>
+          </article>
+        </div>
+        <div class="col-8" id="rightWholeColumn">
+          <div class="row mr-0">
+            <div class="col-12 border border-dark m-3 rounded col forecast bg-primary text-white ml-3 mb-3 rounded" id="rightTopRow">
+              <div class="row" id="cityDetails">
+                <div class="col-12">
+                  <span id="city-name" class="city-name align-middle"></span>
+                  <img id="current-pic" src="placeholder" alt="">
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-12">
+                  <p id="city-temperature"></p>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+                <p id="temp-icon"></p>
+            </div>
+        </div>
+          <div class="row">
+              <div class="col-12">
+                  <p id="humidity"></p>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-12">
+                  <p id="wind-speed"></p>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-12 d-flex">
+                  <div id="UV-index"></div>
+              </div>
+          </div>
+                <!-- append p tags for city title, temp, humidity, wind speed, uv index -->
+              </div>
+            </div>
+          </div>
+          <div class="row" id="rightBottomRow">
+            <div class="col-12" id="rightBottomRowTitle">
+              <h3>5-Day forecast:</h3>
+            </div>
+            <!-- break so that the next 5 divs are under 5 Day Forecast Title -->
+            <div class="w-100"></div>
+            <div class="col">
+              <div
+                class="col forecast bg-primary text-white ml-3 mb-3 rounded"
+                id="firstDayForecastCard"
+              ></div>
+            </div>
+            <div class="col">
+              <div
+                class="col forecast bg-primary text-white ml-3 mb-3 rounded"
+                id="secondDayForecastCard"
+              ></div>
+            </div>
+            <div class="col">
+              <div
+                class="col forecast bg-primary text-white ml-3 mb-3 rounded"
+                id="thirdDayForecastCard"
+              ></div>
+            </div>
+            <div class="col">
+              <div
+                class="col forecast bg-primary text-white ml-3 mb-3 rounded"
+                id="fourthDayForecastCard"
+              ></div>
+            </div>
+            <div class="col">
+              <div
+                class="col forecast bg-primary text-white ml-3 mb-3 rounded"
+                id="fifthDayForecastCard"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- ajax file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- my script -->
+    <script src="assets/scripts/index.js"></script>
+    <script src="assets/scripts/moment.js"></script>
+  </body>
+</html>
