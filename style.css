@@ -1,0 +1,80 @@
+#topTitle {
+  border-width: 100%;
+  text-align: center;
+  background-color: blue;
+  color: white;
+}
+
+#leftColumn {
+  /* justify-content: right; */
+  /* width: 30%; */
+  height: 500px;
+  border: 1px solid black;
+  /* padding: 10px; */
+}
+#rightWholeColumn {
+  /* justify-content: right; */
+  /* width: 70%; */
+  /* height: 500px; */
+
+  padding-bottom: 20px;
+}
+#rightTopRow {
+  /* justify-content: right; */
+  /* width: 70%; */
+  /* height: 500px; */
+  border: 1px solid black;
+  padding-bottom: 10px;
+}
+.columnsPage {
+  width: 100%;
+}
+
+.wholeWebPage {
+  width: 100%;
+}
+
+#rightBottomRow {
+  /* justify-content: right; */
+  /* width: 70%; */
+  /* height: 500px; */
+  border: 1px solid black;
+  padding-top: 10px;
+}
+#firstDayForecastCard {
+  /* justify-content: right; */
+  /* width: 70%; */
+  /* height: 500px; */
+  border: 1px solid black;
+  /* padding: 10px; */
+}
+
+#secondDayForecastCard {
+  /* justify-content: right; */
+  /* width: 70%; */
+  /* height: 500px; */
+  border: 1px solid black;
+  /* padding: 10px; */
+}
+
+#thirdDayForecastCard {
+  /* justify-content: right; */
+  /* width: 70%; */
+  /* height: 500px; */
+  border: 1px solid black;
+  /* padding: 10px; */
+}
+#fourthDayForecastCard {
+  /* justify-content: right; */
+  /* width: 70%; */
+  /* height: 500px; */
+  border: 1px solid black;
+  /* padding: 10px; */
+}
+#fifthDayForecastCard {
+  /* justify-content: right; */
+  /* width: 70%; */
+  /* height: 500px; */
+  border: 1px solid black;
+  padding-left: 10px;
+}
